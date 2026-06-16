@@ -33,7 +33,7 @@ jobs:
     - name: Create Release
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "server.jar"
+        artifacts: "java/server.jar"
         tag: ${{ github.ref_name }}
         name: "java"
         token: ${{ secrets.GITHUB_TOKEN }}
